@@ -1,4 +1,4 @@
-// Código original em Portugol
+// Código original
 // prog imp
 //    imprima "Aprendendo Algoritmo!!!";
 //fimprog

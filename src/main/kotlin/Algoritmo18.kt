@@ -1,4 +1,4 @@
-// Código original em Portugal
+// Código original
 // prog imp8
 //    int x;
 //    X <- 10;

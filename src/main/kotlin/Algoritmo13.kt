@@ -1,4 +1,4 @@
-// Código original em Portugol
+// Código original
 // prog imp3
 //      imprima "Aprendendo Algoritmo!!!";
 //      imprima "\nCom Anita e Guto";

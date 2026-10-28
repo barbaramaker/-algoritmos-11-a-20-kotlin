@@ -1,4 +1,4 @@
-// Código original em Portugol
+// Código original
 // prog imp2
 //    imprima "Aprendendo Algoritmo!!!";
 //    imprima "Com Anita e Guto";
@@ -7,6 +7,6 @@
 // Código em Kotlin
 
 fun main() {
-    print("Aprendendo Algoritmo!!! ")
+    print("Aprendendo Algoritmo!!!")
     print("Com Anita e Guto")
 }

@@ -1,4 +1,4 @@
-// Código original em Portugol
+// Código original
 // prog teste
 //    imprima "raiz: ", raiz(64);
 //    imprima "\nraiz com exp e log e realint: ", realint(exp(1/2*log(64)));
@@ -22,30 +22,62 @@
 // Código em Kotlin
 
 import kotlin.math.*
+import java.util.Locale
 
 fun main() {
 
     println("raiz: ${sqrt(64.0)}")
 
-    println("raiz com exp e log e realint: ${exp(0.5 * ln(64.0)).roundToInt()}")
+    println("raiz com exp e log e realint: ${Math.rint(exp(0.5 * ln(64.0))).toInt()}")
+
     println("raiz com exp e log sem realint: ${exp(0.5 * ln(64.0))}")
 
-    println("%.3f".format(sin(45.0 * PI / 180) + 0.0001))
+    println("%.3f".format(Locale.US, sin(45.0 * PI / 180) + 0.0001))
 
-    println("potencia com exp e log e formatar: %.3f".format(exp(3.0 * ln(8.0)) + 0.001))
+    println(
+
+        "potencia com exp e log e formatar: %.2f".format(
+
+            Locale.US,
+
+            exp(3.0 * ln(8.0)) + 0.001
+
+        )
+
+    )
+
     println("potencia com exp e log sem formatar: ${exp(3.0 * ln(8.0))}")
-    println("potencia com operador ** e formatar: %.3f".format(8.0.pow(3.0)))
+
+    println(
+
+        "potencia com operador ** e formatar: %.3f".format(
+
+            Locale.US,
+
+            8.0.pow(3.0)
+
+        )
+
+    )
 
     println("raiz cubica: ${exp((1.0 / 3.0) * ln(8.0))}")
 
     println("absoluto: ${abs(-8)}")
+
     println("absoluto: ${abs(8)}")
 
-    println("convertendo para inteiro 5.5: ${5.5.roundToInt()}")
-    println("convertendo para inteiro 6.5: ${6.5.roundToInt()}")
-    println("convertendo para inteiro 6.5 + 0.0001: ${(6.5 + 0.0001).roundToInt()}")
-    println("convertendo para inteiro 5.45: ${5.45.roundToInt()}")
-    println("convertendo para inteiro 5.51: ${5.51.roundToInt()}")
+    println("convertendo para inteiro 5.5: ${Math.rint(5.5).toInt()}")
+
+    println("convertendo para inteiro 6.5: ${Math.rint(6.5).toInt()}")
+
+    println("convertendo para inteiro 6.5 + 0.0001: ${Math.rint(6.5 + 0.0001).toInt()}")
+
+    println("convertendo para inteiro 5.45: ${Math.rint(5.45).toInt()}")
+
+    println("convertendo para inteiro 5.51: ${Math.rint(5.51).toInt()}")
+
     println("convertendo para real 87: ${87.toDouble()}")
-    println("convertendo para int 3/4: ${(3.0 / 4.0).toInt()}")
+
+    println("convertendo para int 3/4: ${Math.rint(3.0 / 4.0).toInt()}")
+
 }
